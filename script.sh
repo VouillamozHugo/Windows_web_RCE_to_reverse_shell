@@ -73,7 +73,7 @@ fi
 
 
 cd $path_nc
-python -m http.server 80 1>/dev/null&
+python3 -m http.server 80 1>/dev/null&
 sleep 1
 
 value=$(ps aux | grep python | grep http.server)
